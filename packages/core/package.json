@@ -1,11 +1,18 @@
 {
-  "name": "core",
+  "name": "@react-drag-drop/core",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "build": ""
+    "build": "tsc --project tsconfig.build.json"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   }
 }

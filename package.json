@@ -2,17 +2,20 @@
   "name": "react-drag-drop",
   "version": "1.0.0",
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "description": "",
   "keywords": [],
-  "main": "index.js",
   "scripts": {
     "build:core": "npm run build -w packages/core",
-    "build":  "npm run build:core",
-    "start:playground": "npm run build && npm --prefix playground run dev"
+    "build": "npm run build:core",
+    "start:playground": "npm run build && npm --prefix playground install && npm --prefix playground run dev"
   },
   "workspaces": [
-    "packages/*",
-    "playground"
-  ]
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "typescript": "^5.9.2"
+  }
 }
